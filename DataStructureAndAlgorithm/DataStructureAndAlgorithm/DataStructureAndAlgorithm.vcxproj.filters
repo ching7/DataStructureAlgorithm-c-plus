@@ -18,7 +18,10 @@
     <ClInclude Include="SqlList.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList.h">
+    <ClInclude Include="DLinkedList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SLinkedList.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -26,5 +29,10 @@
     <ClCompile Include="List.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DataStructureAndAlgorithm.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

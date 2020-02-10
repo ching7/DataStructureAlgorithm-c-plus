@@ -118,8 +118,12 @@
     <ClCompile Include="List.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="DLinkedList.h" />
+    <ClInclude Include="SLinkedList.h" />
     <ClInclude Include="SqlList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DataStructureAndAlgorithm.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
