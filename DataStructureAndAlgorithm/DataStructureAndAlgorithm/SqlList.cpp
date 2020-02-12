@@ -1,9 +1,7 @@
 #pragma once
 #define InitSize 100
 
-/*
-	顺序存储
-*/
+//顺序存储
 
 //定义线性表的最大长度
 //动态容量

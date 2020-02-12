@@ -115,15 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="List.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SqlStack.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DLinkedList.h" />
-    <ClInclude Include="SLinkedList.h" />
-    <ClInclude Include="SqlList.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="DataStructureAndAlgorithm.rc" />
+    <ClInclude Include="DLinkedList.cpp" />
+    <ClInclude Include="SLinkedList.cpp" />
+    <ClInclude Include="SqlList.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,9 +1,5 @@
 #pragma once
-#include "malloc.h"
-#include <stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
-
-using namespace std;
 //单链表节点
 typedef struct LNode {
 	int data;

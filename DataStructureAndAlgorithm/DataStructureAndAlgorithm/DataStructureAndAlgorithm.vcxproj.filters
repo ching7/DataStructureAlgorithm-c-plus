@@ -15,24 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SqlList.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="DLinkedList.cpp">
+      <Filter>源文件</Filter>
     </ClInclude>
-    <ClInclude Include="DLinkedList.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="SLinkedList.cpp">
+      <Filter>源文件</Filter>
     </ClInclude>
-    <ClInclude Include="SLinkedList.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="SqlList.cpp">
+      <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="List.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="DataStructureAndAlgorithm.rc">
-      <Filter>资源文件</Filter>
-    </ResourceCompile>
+    <ClCompile Include="SqlStack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
