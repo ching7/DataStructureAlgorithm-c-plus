@@ -3,6 +3,8 @@
 #include "SLinkedList.cpp"
 #include "DLinkedList.cpp"
 #include "SqlStack.cpp"
+#include "LinkQueue.cpp"
+#include "SqQueue.cpp"
 
 using namespace std;
 int main()
@@ -53,13 +55,45 @@ int main()
 	//bool res5 = delDLinkList(L, 1);
 	//bool res6 = delDLinkList(L, 2);
 
-	//顺序栈
-	SqStack sqStack;
-	SqStackFuc sqStackFuc;
-	//初始化栈
-	sqStackFuc.initStack(sqStack);
-	//入栈
-	sqStackFuc.push(sqStack, 1);
-	sqStackFuc.push(sqStack, 2);
-	return 0;
+	////顺序栈
+	//SqStack sqStack;
+	//SqStackFuc sqStackFuc;
+	////初始化栈
+	//sqStackFuc.initStack(sqStack);
+	////入栈
+	//sqStackFuc.push(sqStack, 1);
+	//sqStackFuc.push(sqStack, 2);
+	////出栈
+	//int x;
+	//sqStackFuc.pop(sqStack, x);
+	//sqStackFuc.push(sqStack, 3);
+	////获取栈顶
+	//sqStackFuc.getTop(sqStack, x);
+
+	////链式栈
+	//LinkStack lStack;
+	//LinkStackFuc lStackFuc;
+	//lStackFuc.initLinkStack(lStack);
+
+	//循环队列
+	SqlQueue sqlQueue;
+	SqlQueueFuc sqlQueueFuc;
+	sqlQueueFuc.initQueue(sqlQueue);
+	sqlQueueFuc.enQueue(sqlQueue, 1);
+	sqlQueueFuc.enQueue(sqlQueue, 2);
+	sqlQueueFuc.enQueue(sqlQueue, 3);
+	int out;
+	sqlQueueFuc.deQueue(sqlQueue, out);
+
+	////链式队列
+	//LinkQueue q;
+	//LinkQueueFuc LQFuc;
+	//LQFuc.initQueue(q);
+	//LQFuc.enQueue(q, 1);
+	//LQFuc.enQueue(q, 2);
+	//int out;
+	//LQFuc.deQueue(q, out);
+	//LQFuc.deQueue(q, out);
+	//LQFuc.deQueue(q, out);
+	//return 0;
 }

@@ -1,5 +1,7 @@
 #pragma once
+#define _CRT_SECURE_NO_WARNINGS
 #define MaxSizeSqStack 50
+#include "malloc.h"
 
 //顺序栈-参考顺序表
 //typedef int Elemtype; // int 数据类型别名Elemtype，
@@ -7,7 +9,7 @@ typedef struct  {
 	int data[MaxSizeSqStack];// 栈数据
 	int top;//栈顶指针
 } SqStack;
-
+//顺序栈操作
 typedef struct  {
 	//初始化栈
 	void initStack(SqStack &s)
@@ -73,3 +75,30 @@ typedef struct  {
 	}
 
 } SqStackFuc;
+
+//单链式栈
+typedef struct LinkStackNode
+{
+	int data;//当前节点值
+	struct LinkStackNode *next;//下个节点地址
+} LinkStackNode,*LinkStack;
+
+//链式栈操作
+typedef struct LinkStackFuc
+{
+	void initLinkStack(LinkStack &L)
+	{
+		//1初始化链式栈
+		LinkStackNode *s; //临时节点
+		L =(LinkStack)malloc(sizeof(LinkStackNode)); //初始化链式栈 
+		//LinkStackNode *t = L; //t为栈底
+		for (int i = 0; i < 4; i++)
+		{
+			s = (LinkStackNode *)malloc(sizeof(LinkStackNode));
+			s->data = i;
+			s->next = L;
+			L = s; //入栈新增
+			//t = s; //移动栈底
+		}
+	};
+}LinkStackFuc;
