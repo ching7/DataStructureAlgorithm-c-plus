@@ -38,5 +38,8 @@
     <ClCompile Include="SqQueue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BitNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

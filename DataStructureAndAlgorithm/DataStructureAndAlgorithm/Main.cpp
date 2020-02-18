@@ -5,7 +5,7 @@
 #include "SqlStack.cpp"
 #include "LinkQueue.cpp"
 #include "SqQueue.cpp"
-
+#include "BitNode.cpp"
 using namespace std;
 int main()
 {
@@ -76,14 +76,14 @@ int main()
 	//lStackFuc.initLinkStack(lStack);
 
 	//循环队列
-	SqlQueue sqlQueue;
+	/*SqlQueue sqlQueue;
 	SqlQueueFuc sqlQueueFuc;
 	sqlQueueFuc.initQueue(sqlQueue);
 	sqlQueueFuc.enQueue(sqlQueue, 1);
 	sqlQueueFuc.enQueue(sqlQueue, 2);
 	sqlQueueFuc.enQueue(sqlQueue, 3);
 	int out;
-	sqlQueueFuc.deQueue(sqlQueue, out);
+	sqlQueueFuc.deQueue(sqlQueue, out);*/
 
 	////链式队列
 	//LinkQueue q;
@@ -96,4 +96,21 @@ int main()
 	//LQFuc.deQueue(q, out);
 	//LQFuc.deQueue(q, out);
 	//return 0;
+
+	//链式二叉树
+	BiTree bitree = NULL; //空树
+	BitTreeFuc bitreeFuc;
+	//插入
+	bitreeFuc.insertBiTree(bitree, 10);
+	bitreeFuc.insertBiTree(bitree, 9);
+	bitreeFuc.insertBiTree(bitree, 6);
+	bitreeFuc.insertBiTree(bitree, 7);
+	bitreeFuc.insertBiTree(bitree, 8);
+	//前序
+	//bitreeFuc.PreOrder(bitree);
+	//中序
+	//bitreeFuc.InOrder(bitree);
+	//后序
+	bitreeFuc.PostOrder(bitree);
+
 }
